@@ -9,7 +9,7 @@ var logger = require('morgan');
 
 //router modules
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var skillsRouter = require('./routes/skills');
 
 var app = express();
 
@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //mounting router middlware... routers are middleware functions
 //starting paths, and then the paths used in routes appended
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/todos', skillsRouterRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
