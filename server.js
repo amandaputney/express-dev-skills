@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //mounting router middlware... routers are middleware functions
 //starting paths, and then the paths used in routes appended
 app.use('/', indexRouter);
-app.use('/todos', skillsRouterRouter);
+app.use('/skills', skillsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

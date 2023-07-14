@@ -5,4 +5,7 @@ var skillsCtrl = require('../controllers/skills');
 
 //all paths start with /skills
 
+//get request /skills
+router.get('/', skillsCtrl.index);
+
 module.exports = router;
