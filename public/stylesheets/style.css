@@ -1,8 +1,17 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px;
+  background-color: rgb(213, 245, 245);
+  font-family: 'Phudu', cursive;
+  /* font-family: 'Chela One', cursive; */
 }
 
 a {
-  color: #00B7FF;
+  color: #116431;
+}
+
+h1 {
+  /* font-family: 'Phudu', cursive; */
+  /* font-family: 'Chela One', cursive; */
+  font-family: 'Lilita One', cursive;
 }
