@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,24 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <title>Developer Skills</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>All To-Dos</title>
 </head>
 
 <body>
-    <h1>Developer Skills</h1>
-    <ul>
-        <% skills.forEach(function(s) { %>
-            <li>
-                <a href="/skills/<%= s.id %>">
-                    <%= s.skill %>
-                </a>
-
-                -
-                <%= s.aquired ? 'aquired' : 'not aquired' %>
-            </li>
-            <% }); %>
-    </ul>
-    <a href="/skills/new">Add Skill</a>
-</body>
-
-</html>
+    <a href="/">Home</a>
+    |
+    <a href="/skills">All Skills</a>
+    <h1>
+        <%= title %>
+    </h1>
