@@ -15,3 +15,10 @@ h1 {
   /* font-family: 'Chela One', cursive; */
   font-family: 'Lilita One', cursive;
 }
+
+button {
+  background-color: darkcyan;
+  color: aliceblue;
+  border: #116431;
+  border-radius: 5%;
+}

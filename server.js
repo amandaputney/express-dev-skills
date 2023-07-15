@@ -7,6 +7,7 @@ var cookieParser = require('cookie-parser');
 //logging requests as they come in to our server
 var logger = require('morgan');
 
+var methodOverride = require('method-override');
 //router modules
 var indexRouter = require('./routes/index');
 var skillsRouter = require('./routes/skills');
@@ -24,6 +25,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(methodOverride('_method'));
 
 //mounting router middlware... routers are middleware functions
 //starting paths, and then the paths used in routes appended

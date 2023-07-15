@@ -24,6 +24,8 @@
 
                 -
                 <%= s.aquired ? 'aquired' : 'not aquired' %>
+                    <form action="/skills/<%= s.id %>?_method=DELETE" method="POST" class="delete-form">
+                        <button type="submit">X</button>
             </li>
             <% }); %>
     </ul>
